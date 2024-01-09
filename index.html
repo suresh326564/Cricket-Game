@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="images_container">
+      <div class="all">
+        <button
+          class="bat"
+          onclick="
+                let userChoiceMsg = '';
+                let random_number = Math.random() * 3;
+                let computerChoice;
+                
+                if (random_number > 0 && random_number <= 1) {
+                    computerChoice = 'bat';
+                } else if (random_number > 1 && random_number <= 2) {
+                    computerChoice = 'ball';
+                } else {
+                    computerChoice = 'stumps';
+                }
+
+                let results;
+
+                if (computerChoice === 'ball') {
+                    results = 'User won';
+                } else if (computerChoice === 'bat') {
+                    results = 'It\'s a draw';
+                } else if (computerChoice === 'stumps') {
+                    results = 'Computer won';
+                }
+
+                alert(`You choose bat. Computer choice is ${computerChoice} and ${results}`);
+            "
+        ></button>
+
+        <button
+          class="ball"
+          onclick="
+                let userChoiceMsg = '';
+                let random_number = Math.random() * 3;
+                let computerChoice;
+                
+                if (random_number > 0 && random_number <= 1) {
+                    computerChoice = 'bat';
+                } else if (random_number > 1 && random_number <= 2) {
+                    computerChoice = 'ball';
+                } else {
+                    computerChoice = 'stumps';
+                }
+
+                let results;
+
+                if (computerChoice === 'stumps') {
+                    results = 'User won';
+                } else if (computerChoice === 'ball') {
+                    results = 'It\'s a draw';
+                } else if (computerChoice === 'bat') {
+                    results = 'Computer won';
+                }
+
+                alert(`You choose ball. Computer choice is ${computerChoice} and ${results}`);
+            "
+        ></button>
+
+        <button
+          class="stumps"
+          onclick="
+                let userChoiceMsg = '';
+                let random_number = Math.random() * 3;
+                let computerChoice;
+                
+                if (random_number > 0 && random_number <= 1) {
+                    computerChoice = 'bat';
+                } else if (random_number > 1 && random_number <= 2) {
+                    computerChoice = 'ball';
+                } else {
+                    computerChoice = 'stumps';
+                }
+
+                let results;
+
+                if (computerChoice === 'bat') {
+                    results = 'User won';
+                } else if (computerChoice === 'stumps') {
+                    results = 'It\'s a draw';
+                } else if (computerChoice === 'ball') {
+                    results = 'Computer won';
+                }
+
+                alert(`You choose stumps. Computer choice is ${computerChoice} and ${results}`);
+            "
+        ></button>
+      </div>
+    </div>
+  </body>
+</html>

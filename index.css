@@ -1,0 +1,53 @@
+#images_container{
+    height: 100px;
+    width: 270px;
+    background-color: lightblue;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 90px 125px;
+   
+
+}
+.bat{
+   background-image: url(images/download.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 80px;
+   width: 80px;
+   cursor: pointer;
+   
+}
+.ball{
+    background-image: url(images/download\ \(2\).jpeg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+.stumps{
+    background-image: url(images/download\ \(3\).jpeg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    
+}
+.all{
+    margin: 3px;
+   
+}
+.ball:hover{
+    height: 90px;
+}
+.bat:hover{
+    height: 90px;
+}
+.stumps:hover{
+    height: 90px;
+}
